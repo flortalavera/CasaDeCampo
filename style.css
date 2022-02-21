@@ -185,3 +185,89 @@ h4{
 .d-flex{
     margin-right: 14px;
 }
+
+/*estilos comentarios*/
+
+.testimonios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.testimonios-header{
+    margin: 50px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios-header span{
+    font-family: "Lobster";
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+}
+
+.testimonios-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.testimonios-caja{
+    width: 500px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+    background-color: #ffff;
+    padding: 20px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.comentarios-clientes p{
+    font-family: "PT Serif, serif";
+    font-size: 19px;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reseñas i{
+    color: #f5f129;
+}
+
+.caja-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.perfil-imagen{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.perfil-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column;
+}

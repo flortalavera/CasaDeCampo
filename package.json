@@ -1,0 +1,22 @@
+{
+  "name": "casacampo",
+  "version": "1.0.0",
+  "description": "pagina de alquiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flortalavera/CasaDeCampo.git"
+  },
+  "keywords": [
+    "casadecampo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flortalavera/CasaDeCampo/issues"
+  },
+  "homepage": "https://github.com/flortalavera/CasaDeCampo#readme"
+}
