@@ -2,7 +2,7 @@
   "name": "casacampo",
   "version": "1.0.0",
   "description": "pagina de alquiler",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,10 +13,16 @@
   "keywords": [
     "casadecampo"
   ],
-  "author": "",
+  "author": "Flor Talavera",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/flortalavera/CasaDeCampo/issues"
   },
-  "homepage": "https://github.com/flortalavera/CasaDeCampo#readme"
+  "homepage": "https://github.com/flortalavera/CasaDeCampo#readme",
+  "devDependencies": {
+    "browsersync": "^0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  }
 }
