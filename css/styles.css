@@ -141,6 +141,7 @@ footer {
 .servicios {
   display: flex;
   flex-direction: row;
+  margin: 40px;
 }
 .servicios h2 {
   font-family: "Lobster";
@@ -176,6 +177,37 @@ footer {
   float: right;
   margin-left: 0;
   margin-right: 20px;
+}
+
+.description {
+  margin: 10px;
+  text-align: center;
+}
+
+.rooms-image img {
+  width: 40%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.rooms {
+  margin-right: 40px;
+  margin-top: 50px;
+}
+.rooms h2 {
+  margin-right: 80px;
+}
+
+img {
+  width: 30%;
+  margin: 5px;
+}
+
+.spa {
+  margin: 50px;
+}
+.spa h2 {
+  margin-right: 60px;
 }
 
 /* ESTILOS TESTIMONIOS */
