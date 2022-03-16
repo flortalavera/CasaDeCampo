@@ -1,36 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info</title>
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Lobster&family=PT+Serif&family=Quintessential&display=swap');
+  </style>
+
+  <script src="https://kit.fontawesome.com/b1eb703c25.js" crossorigin="anonymous"></script>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="path/to/css/font-awesome.min.css">
+
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
-        <div class="container-fluid">
-            <img style="width: 10vw; margin-right: 10px;" src="/assets/Casa campo.jpg">
-          <a class="navbar-brand" style="font-size:30px;">Welcome</a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li id="home" class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <i class="fa-solid fa-house-chimney"></i>
-              <li id="info" class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li id="contact" class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="container-fluid">
+      <img style="width: 10vw; margin-right: 10px;" src="/assets/Casa campo.jpg">
+      <div class="navbar-brand" style="font-size:30px;">Welcome</div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="/home/servicios/sevicios.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/home/info/info.html">Info</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a class="btn btn-secondary btn-lg" href="/home/formulario/formulario.html">CONTACT</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="smart-wrap">
+    <div class="smart-forms smart-container wrap-2">
+
+      <div class="form-header header-primary">
+        <h4><i class="fa fa-calendar"></i> Reservá tu habitación en unos minutos</h4>
+      </div>
+
+      <form method="post" action="/" id="contact">
+        <div class="form-body">
+
+          <div class="section">
+            <label for="guestname" class="field-label">Por favor escriba su Nombre</label>
+            <label for="guestname" class="field prepend-icon">
+              <input type="text" name="guestname" id="guestname" class="gui-input" required=""
+                placeholder="John Doe/Jane Doe">
+              <span class="field-icon"><i class="fa fa-user"></i></span>
+            </label>
+          </div>
+
+          <div class="frm-row">
+            <div class="section colm colm6">
+              <label for="guestemail" class="field-label">Email</label>
+              <label for="guestemail" class="field prepend-icon">
+                <input type="email" name="guestemail" id="guestemail" class="gui-input" required=""
+                  placeholder="john@something.com">
+                <span class="field-icon"><i class="fa fa-envelope"></i></span>
+              </label>
+            </div>
+
+            <div class="section colm colm6">
+              <label for="guestelephone" class="field-label">Telefono / Celular</label>
+              <label for="guestelephone" class="field prepend-icon">
+                <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required=""
+                  placeholder="Telephone / Moble Number">
+                <span class="field-icon"><i class="fa fa-phone-square"></i></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="frm-row">
+            <div class="section colm colm6">
+              <label for="adults" class="field-label">Número de adultos</label>
+              <label for="adults" class="field prepend-icon">
+                <input type="number" id="adults" name="adults" class="gui-input" required=""
+                  placeholder="Number of adults">
+                <span class="field-icon"><i class="fa fa-users"></i></span>
+              </label>
+            </div>
+
+            <div class="section colm colm6">
+              <label for="children" class="field-label">Número de niños</label>
+              <label for="children" class="field prepend-icon">
+                <input type="number" id="children" name="children" class="gui-input" required=""
+                  placeholder="Number of children">
+                <span class="field-icon"><i class="fa fa-users"></i></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="frm-row">
+            <div class="section colm colm6">
+              <label for="checkin" class="field-label">Check-in Date</label>
+              <label for="checkin" class="field prepend-icon">
+                <input type="date" id="checkin" name="checkin" class="gui-input" required="" placeholder="mm/dd/yyyy">
+                <span class="field-icon"><i class="fa fa-calendar"></i></span>
+              </label>
+            </div>
+
+            <div class="section colm colm6">
+              <label for="checkout" class="field-label">Check-out Date</label>
+              <label for="checkout" class="field prepend-icon">
+                <input type="date" id="checkout" name="checkout" class="gui-input" required="" placeholder="mm/dd/yyyy">
+                <span class="field-icon"><i class="fa fa-calendar"></i></span>
+              </label>
+            </div>
+          
+          </div>
+
+            <div><strong>Por favor conteste para una estadía plasentera</strong></div>
+
+          <div class="frm-row">
+            <div class="option-group field">
+
+              <div class="section colm colm6">
+                <label class="switch">
+                  <input type="checkbox" name="switch1" id="switch1" value="switch1">
+                  <span class="switch-label" data-on="YES" data-off="NO"></span>
+                  <span>Trae mascota?</span>
+                </label>
+              </div>
+
+              <div class="section colm colm6">
+                <label class="switch">
+                  <input type="checkbox" name="switch2" id="switch2" value="switch2">
+                  <span class="switch-label" data-on="YES" data-off="NO"></span>
+                  <span>Necesita servicio de translado?</span>
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section">
+            <label for="comment" class="field-label">Cualquier otra cosa que debamos saber?</label>
+            <label for="comment" class="field prepend-icon">
+              <textarea class="gui-textarea" id="comment" name="comment"
+                placeholder="Cualquier pedido especial"></textarea>
+              <span class="field-icon"><i class="fa fa-comments"></i></span>
+            </label>
+          </div>
+
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="button btn-primary">Confirmar reserva</button>
+          <button type="reset" class="button">Cancelar</button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="questions">
+      <h4>Preguntas frecuentes <i class="fas fa-question-circle"></i></h4>
+      <strong>¿Qué atracciones populares están cerca?</strong>
+      <p>Algunas atracciones cercanas son Museo Histórico Fuerte Independencia (4,1 km),
+        Lago y Dique del Fuerte (4,2 km) y Palacio Municipal(4,4 km).</p>
+      <strong>¿Qué restaurantes hay cerca?</strong>
+      <p>Algunos restaurantes bien ubicados son Ladran Restaurante, Restaurant De La Cascada y Tierra de Azafranes.</p>
+      <strong>¿Cuáles son los lugares más populares para ir con niños?</strong>
+      <p>Parque Independencia, Sierra del Tigre Natural Reserve, Plaza Independencia, Parque del Origen</p>
+      <div class="calification">
+        <h4>Valoraciones</h4>
+        <span class="puntaje">4,0</span><span class="rating"><strong>Muy bueno</strong></span><span class="opiniones">
+            <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i
+              class="fas fa-circle"></i><i class="far fa-circle"></i>
+            203 opiniones</span></div>
+        <span class="alojamientos">N º 14 de 143 alojamientos especiales en San Miguel del Monte</span>
+        <div class="valores">
+          <div class="puntaje_valor"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i
+              class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle ultimo"></i>Ubicación</div>
+          <div class="puntaje_valor"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i
+              class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle ultimo"></i>Limpieza</div>
+          <div class="puntaje_valor"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i
+              class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle ultimo"></i>Servicio</div>
+          <div class="puntaje_valor"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i
+              class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="far fa-circle ultimo"></i>Calidad/Precio
           </div>
         </div>
-      </nav>
-    
+      </div>
+    </div>
+
+  </div>
+
+  <div class="services">
+    <h3>Servicios más populares</h3>
+    <i class="fas fa-wifi"> Wifi Gratis</i>
+    <i class="fas fa-users"> Habitaciones familiares</i>
+    <i class="fas fa-history"> Recepción las 24hs</i>
+    <i class="fas fa-wheelchair"> Adaptado para personas con movilidad reducida</i>
+    <i class="fas fa-snowflake"> Aire acondicionado</i>
+  </div>
+  <div class="details">
+    <ul class="banio">
+      <i class="fas fa-sink"> BAÑO</i>
+      <br />
+      <ol><i class="fas fa-check"></i> Papel Higienico</ol>
+      <ol><i class="fas fa-check"></i> Toallas</ol>
+      <ol><i class="fas fa-check"></i> Bidé</ol>
+      <ol><i class="fas fa-check"></i> Baño privado</ol>
+      <ol><i class="fas fa-check"></i> Artículos de tocador gratuitos</ol>
+      <ol><i class="fas fa-check"></i> Secador de pelo</ol>
+    </ul>
+    <ul class="habitacion">
+      <i class="fas fa-star"> Habitación</i>
+      </br>
+      <ol><i class="fas fa-check"></i> Ropa de cama</ol>
+      <ol><i class="fas fa-check"></i> Armario</ol>
+    </ul>
+    <ul class="exteriores">
+      <i class="fas fa-leaf"> Exteriores</i>
+      <ol>Paz y tranquilidad</ol>
+      <ol><i class="fas fa-check"></i> Balcón</ol>
+    </ul>
+    <ul class="adicional">
+      <i class="fas fa-bed"> Instalaciones de la habitación</i>
+      <ol>Confort adicional</ol>
+      <ol><i class="fas fa-check"></i> Enchufe cerca de la cama</ol>
+      <ol><i class="fas fa-check"></i> Perchero de barral</ol>
+      <ol><i class="fas fa-check"></i> Plancha para ropa</ol>
+      <ol><i class="fas fa-check"></i> Caja de seguridad</ol>
+    </ul>
+    <ul class="visual">
+      <i class="fas fa-tv"> Equipo audio visual</i>
+      <ol><i class="fas fa-check"></i> TV Pantalla plana</ol>
+      <ol><i class="fas fa-check"></i> Canales por cable</ol>
+      <ol><i class="fas fa-check"></i> Netflix</ol>
+    </ul>
+    <ul class="internet">
+      <i class="fas fa-wifi"> Internet</i>
+      <ol>Hay conexión a internet Wi-Fi disponible</ol>
+      <ol>en todo el establecimiento. Gratis.</ol>
+    </ul>
+    <ul class="recepcion">
+      <i class="fas fa-bell-concierge"> Servicios de recepción</i>
+      <ol><i class="fas fa-check"></i> Proporciona factura</ol>
+      <ol><i class="fas fa-check"></i> Recepción las 24hs</ol>
+    </ul>
+    <ul class="seguridad">
+      <i class="fas fa-lock-keyhole"> Seguridad</i>
+      <ol><i class="fas fa-check"></i> Extintores</ol>
+      <ol><i class="fas fa-check"></i> Cámaras de seguridad en áreas comunes</ol>
+      <ol><i class="fas fa-check"></i> Detector de humo</ol>
+      <ol><i class="fas fa-check"></i> Caja fuerte</ol>
+      <ol><i class="fas fa-check"></i> Seguridad las 24hs</ol>
+    </ul>
+    <ul class="idiomas">
+      <i class="fas fa-comments"> Idiomas que se hablan</i>
+      <ol><i class="fas fa-check"></i> Español</ol>
+      <ol><i class="fas fa-check"></i> Inglés</ol>
+      <ol><i class="fas fa-check"></i> Portugués</ol>
+    </ul>
+  </div>
+
 </body>
+<footer>
+  <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
+    target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+  <div>
+    <h3>Seguinos</h3>
+    <section class="redes">
+      <i class="fab fa-instagram" href="#"></i>
+      <i class="fab fa-facebook" href="#"></i>
+      <i class="fab fa-twitter" href="#"></i>
+    </section>
+
+</footer>
+
 </html>

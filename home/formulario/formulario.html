@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
 
-    <link rel="stylesheet" href="/css/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Lobster&family=PT+Serif&family=Quintessential&display=swap');
-    </style>
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Lobster&family=PT+Serif&family=Quintessential&display=swap');
+  </style>
 
-     <script src="https://kit.fontawesome.com/b1eb703c25.js" crossorigin="anonymous"></script>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <script src="https://kit.fontawesome.com/b1eb703c25.js" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
-        <div class="container-fluid">
-            <img style="width: 10vw; margin-right: 10px;" src="/assets/Casa campo.jpg">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              <li class="nav-item">
-                <a class="nav-link" href="/sevicios.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Info</a>
-              </li>
-            </ul>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="container-fluid">
+      <img style="width: 10vw; margin-right: 10px;" src="/assets/Casa campo.jpg">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../servicios/sevicios.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../info/info.html">Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-form">
+    <section class="container">
+      <h4>CONSULTAS GENERALES</h4>
+      <p>En Santa Rita Casa de Campo, los estamos esperando, envianos tu consulta y te responderemos a la brevedad.</p>
+      <br>
+      <p>info@santarita.com</p>
+      <p>Telefonos: 03447-15413453 / 011-1533917980</p>
+      <br>
+      <p>De 9:00 hs. a 19:00 hs.</p>
+    </section>
+    <section class="sec-form">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Nombre</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
         </div>
-      </nav>
-    <div class="container-form">
-        <section class="container">
-            <h4>CONSULTAS GENERALES & RESERVAS</h4>
-            <p>En Santa Rita Casa de Campo, los estamos esperando, envianos tu consulta y te responderemos a la brevedad.</p>
-            <br>
-            <p>info@santarita.com</p>
-            <p>Telefonos: 03447-15413453 / 011-1533917980</p>
-            <br>
-            <p>De 9:00 hs. a 19:00 hs.</p>
-        </section>
-        <section class="sec-form">
-        <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Nombre</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
-            </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Apellido</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Apellido">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Mail</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Mail">
-            </div>
-            <div class="col-md-6">
-              <label for="inputAddress2" class="form-label">Teléfono</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Telefono">
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">Ciudad</label>
-              <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">Tipo de consulta</label>
-              <select id="inputState" class="form-select">
-                <option selected></option>
-                <option>Habitación</option>
-                <option>Evento</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label for="inputZip" class="form-label">Si es Evento, para cuantas personas?</label>
-              <input type="text" class="form-control" id="inputZip" placeholder="Cantidad de personas en el Evento">
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-          </form>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Apellido</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Apellido">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Mail</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Mail">
+        </div>
+        <div class="col-md-6">
+          <label for="inputAddress2" class="form-label">Teléfono</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Telefono">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Tipo de consulta</label>
+          <select id="inputState" class="form-select">
+            <option selected></option>
+            <option>Habitación</option>
+            <option>Evento</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="inputZip" class="form-label">Si es Evento, para cuantas personas?</label>
+          <input type="text" class="form-control" id="inputZip" placeholder="Cantidad de personas en el Evento">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
     </section>
 
-    </div>
-    
+  </div>
+
 </body>
+<footer>
+  <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
+    target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+  <div>
+    <h3>Seguinos</h3>
+    <section class="redes">
+      <i class="fab fa-instagram" href="#"></i>
+      <i class="fab fa-facebook" href="#"></i>
+      <i class="fab fa-twitter" href="#"></i>
+    </section>
+
+  </div>
+</footer>
+
 </html>

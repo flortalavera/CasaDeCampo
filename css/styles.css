@@ -23,6 +23,7 @@ header {
   font-size: 100px;
   color: #f8ecec;
 }
+
 p {
   font-family: "Quintessential, cursive";
   font-size: 50px;
@@ -291,6 +292,90 @@ img {
 .name-user {
   display: flex;
   flex-direction: column;
+}
+
+/* ESTILOS INFO */
+.smart-forms {
+  margin-left: 40px;
+}
+
+.services {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.services h3 {
+  padding: 10px;
+}
+.services i {
+  padding: 5px;
+}
+
+.details {
+  column-count: 3;
+  column-gap: 40px;
+}
+
+.smart-wrap {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+.smart-wrap label {
+  padding: 3px;
+}
+.smart-wrap .form-footer {
+  text-align: center;
+  margin: 10px;
+}
+
+.field-icon {
+  float: left;
+  margin-right: 8px;
+}
+
+.questions {
+  margin-left: 12rem;
+}
+.questions p {
+  color: #111010;
+  font-size: var(--bs-body-font-size);
+  font-family: var(--bs-body-font-family);
+}
+.questions .puntaje {
+  font-size: 40px;
+}
+.questions .fa-circle {
+  margin: 2px;
+  color: green;
+}
+.questions .rating {
+  font-size: 20px;
+  margin-left: 5px;
+}
+.questions .puntaje_valor {
+  padding: 5px;
+}
+.questions .ultimo {
+  margin-right: 20px;
+}
+.questions .alojamientos {
+  -top: 20px;
+}
+.questions .valores {
+  margin-top: 20px;
+}
+
+.section {
+  padding: 5px;
+}
+.section .prepend-icon {
+  float: right;
+  margin-right: 2rem;
+}
+
+.frm-row {
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
