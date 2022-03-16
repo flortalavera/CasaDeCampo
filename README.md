@@ -1,4 +1,8 @@
 # CasaDeCampo
-Página Web - Alquiler de Casa
+Página Web - Alquiler Casa de Campo
 
-Proyecto utilizando para la maquetación HTML y Sass
+## Maquetación
+HTML y Sass
+
+## Adaptación (próximamente) en
+React
